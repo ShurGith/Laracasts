@@ -1,0 +1,14 @@
+#nav {
+    font-family: monospace;
+    font-size: 18px;
+    & .lista {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        list-style: none;
+        & a {
+            color: darksalmon;
+            text-decoration: none;
+        }
+    }
+}
