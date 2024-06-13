@@ -1,7 +1,9 @@
-<?php $titulo = 'Listado de Posts'; ?>
-<x-layout meta-title="{{ $titulo }}" meta-description="Meta Description {{ $titulo }}">
-    <x-slot:heading>{{ $titulo }}</x-slot:heading>
-    <x-slot:datos>
+<?php $titulo = 'Listado de Posts';
+$meta_descripcion = 'Meta Descripción '. $titulo;  ?>
+
+@extends('components.layout')
+    @section('datos')
+
         @component('_partials.link-nueva')
         @slot('mt', '')
        @endcomponent
@@ -16,5 +18,4 @@
         @component('_partials.link-nueva')
          @slot('mt', 'mt-20')
         @endcomponent
-    </x-slot:datos>
-</x-layout>
+    @endsection
